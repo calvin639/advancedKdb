@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <title>Advanded CMTP HTML</title>
+</head>
+<body onload="connect();">
+    <section class="select">
+        <h3>Select Syms: </h3>
+        <div id="selectSyms"></div>
+        <button type="submit" onclick="filterSyms();">Filter</button>
+    </section>
+    <section id="quotes" class="display">
+        <div class="split">
+            <h3>Trades</h3>
+            <table id="tblTrade"></table>
+        </div>
+        
+        
+    </section>
+    <!-- JavaScript-->
+    <script>
+var ws, syms = document.getElementById("selectSyms"),
+    trades = document.getElementById("tblTrade");
+
+function connect() {
+    if ("WebSocket" in window) {
+        ws = new WebSocket("ws://localhost:5001");
+        ws.onopen = function(e) {
+            ws.send("loadPage[]");
+        };
+
+        ws.onmessage = function(e) {
+            var d = JSON.parse(e.data);
+            switch(d.func){
+                case 'getSyms' : setSyms(d.result); break;
+                case 'getTrades' : setTrades(d.result);
+            }
+        };
+        ws.onclose = function(e){ console.log("disconnected")};
+        ws.onerror = function(e){ console.log(e.data)};
+    } else alert("WebSockets not supported on your browser.");
+}
+
+function filterSyms() {
+    var t = [], s = syms.children;
+    for (var i = 0; i < s.length; i++) {
+        if (s[i].checked) {
+            t.push(s[i].value);
+        };
+    };
+    t = t.join("`");
+    ws.send('filterSyms[`'+ t +']');
+}
+
+function setSyms(data) {
+    syms.innerHTML = '';
+    for (var i = 0; i < data.length; i++) {
+        syms.innerHTML += '<input type="checkbox" name="sym" value="' +
+        data[i] + '">' + data[i] + '</input>';
+    };
+}
+
+function setTrades(data) { trades.innerHTML = generateTableHTML(data) }
+
+function generateTableHTML(data){
+    var tableHTML = '<table border="1"><tr>';
+    for (var x in data[0]) {
+        tableHTML += '<th>' + x + '</th>';
+    }
+    tableHTML += '</tr>';
+    for (var i = 0; i < data.length; i++) {
+        tableHTML += '<tr>';
+        for (var x in data[0]) {
+            var cellData;		
+            if("time" === x)
+                cellData = data[i][x];
+            else if("number" == typeof data[i][x])
+                cellData = data[i][x].toFixed(2);
+            else cellData = data[i][x];
+            tableHTML += '<td>' + cellData + '</td>';
+        }
+        tableHTML += '</tr>';
+    }
+    tableHTML += '</table>';
+    return tableHTML;
+}
+    
+    
+    </script>
+    <!-- Define some CSS styling on page elements -->
+    <style>
+        section {margin:10px;padding:30px;width:115%;}
+        button {margin:10px;}
+        h3 {margin:15px;}
+        table {border-collapse:collapse;text-align:center;width:100%;} 
+        td,th {border:1px solid black;padding:5px 20px;width:25%}
+        .split {float:left;width:45%;margin-right:20px;display:table;}
+        #selectSyms {padding:10px;min-height:30px;}
+    </style>
+</body>
+</html>

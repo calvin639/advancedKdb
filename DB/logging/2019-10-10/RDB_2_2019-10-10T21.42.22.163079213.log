@@ -1,0 +1,11 @@
+"init_block complete"
+"01:42:25.222   LOG INFO :: This process is a : RDB2"
+"01:42:25.223   LOG INFO :: Finished importing libraries"
+"01:42:25.223   LOG INFO :: Connecting to BASE process"
+"01:42:25.223   LOG INFO :: Connecting to BASE process"
+"01:42:25.223   LOG INFO :: completed command on handle : 5"
+,`aggtbl
+"01:42:25.224   LOG INFO :: Subscribing to TP tables"
+"01:42:25.225   LOG INFO :: Finished Subscribing to TP tables"
+"01:43:25.325   LOG INFO :: Update for the aggtbl  table"
+"01:43:28.535   LOG INFO :: Removed client from pub tbl : CEP"

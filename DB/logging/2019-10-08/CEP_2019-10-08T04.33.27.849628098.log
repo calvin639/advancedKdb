@@ -1,0 +1,9 @@
+"init_block complete"
+"08:33:29.907   LOG INFO :: completed command on handle : 5"
+"08:33:29.908   LOG INFO :: New subscription successful"
+"Forcing Sub"
+"Forced Sub"
+"DONE"
+"08:33:30.911   LOG INFO :: Added connection from SVC : RDB2"
+'2019.10.08T04:37:21.925 svc
+"08:38:01.565   LOG INFO :: Removed client from pub tbl : "

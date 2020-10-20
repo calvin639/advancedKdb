@@ -1,0 +1,62 @@
+"init_block complete"
+topic client
+------------
+"06:53:24.251   LOG INFO :: Updates for the trade table recieved so far today..
+"06:53:24.251   LOG INFO :: Updates for the quote table recieved so far today..
+"06:53:27.457   LOG INFO :: New subscription successful"
+"06:53:27.457   LOG INFO :: New subscription successful"
+'2019.09.27T02:53:29.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:30.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:32.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:34.251 hop. OS reports: Connection refused
+topic client
+------------
+quote CEP   
+trade CEP   
+'2019.09.27T02:53:36.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:37.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:39.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:42.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:44.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:46.090 .sub..tbl
+  [0]  .sub..tbl
+       ^
+'2019.09.27T02:53:46.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:47.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:49.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:51.252 hop. OS reports: Connection refused
+'2019.09.27T02:53:53.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:55.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:57.251 hop. OS reports: Connection refused
+'2019.09.27T02:53:59.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:01.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:03.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:05.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:07.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:09.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:11.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:13.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:15.251 hop. OS reports: Connection refused
+sym| max_price min_price trade_vol avg_size last_price
+---| -------------------------------------------------
+'2019.09.27T02:54:17.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:19.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:21.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:22.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:24.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:25.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:27.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:29.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:31.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:33.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:34.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:36.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:38.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:40.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:42.252 hop. OS reports: Connection refused
+'2019.09.27T02:54:44.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:46.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:48.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:50.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:52.251 hop. OS reports: Connection refused
+'2019.09.27T02:54:54.251 hop. OS reports: Connection refused

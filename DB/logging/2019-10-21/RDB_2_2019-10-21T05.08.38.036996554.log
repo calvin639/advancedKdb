@@ -1,0 +1,12 @@
+"init_block complete"
+"09:08:41.089   LOG INFO :: This process is a : RDB2"
+"09:08:41.090   LOG INFO :: Finished importing libraries"
+"09:08:41.090   LOG INFO :: Connecting to BASE process"
+"09:08:41.090   LOG INFO :: Connecting to BASE process"
+"09:08:41.090   LOG INFO :: completed command on handle : 5"
+,`aggtbl
+"09:08:41.091   LOG INFO :: Subscribing to TP tables"
+"09:08:41.091   LOG INFO :: Finished Subscribing to TP tables"
+"09:08:41.092   LOG INFO :: Replaying log file :: :/home/cwright/advanced/logging/txn/TP_2019.10.21.log"
+"09:08:41.093   LOG INFO :: Completed log replay"
+"09:08:41.093   LOG INFO :: Setting timere"

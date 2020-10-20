@@ -1,0 +1,22 @@
+"init_block complete"
+"08:33:28.902   LOG INFO :: New subscription successful"
+"08:33:28.902   LOG INFO :: New subscription successful"
+"08:33:28.902   LOG INFO :: Added connection from SVC : RDB1"
+"08:33:29.908   LOG INFO :: New subscription successful"
+"08:33:29.908   LOG INFO :: New subscription successful"
+"08:33:29.908   LOG INFO :: Added connection from SVC : CEP"
+"08:33:30.911   LOG INFO :: New subscription successful"
+"08:33:30.911   LOG INFO :: Added connection from SVC : RDB2"
+"08:34:27.899   LOG INFO :: Updates for the trade table recieved so far today : 55"
+"08:34:27.900   LOG INFO :: Updates for the quote table recieved so far today : 140"
+"08:35:27.999   LOG INFO :: Updates for the trade table recieved so far today : 115"
+"08:35:27.999   LOG INFO :: Updates for the quote table recieved so far today : 285"
+"08:36:28.099   LOG INFO :: Updates for the trade table recieved so far today : 175"
+"08:36:28.100   LOG INFO :: Updates for the quote table recieved so far today : 430"
+"08:37:28.199   LOG INFO :: Updates for the trade table recieved so far today : 235"
+"08:37:28.200   LOG INFO :: Updates for the quote table recieved so far today : 575"
+"08:38:06.501   LOG INFO :: Removed client from pub tbl : "
+("0";"8";":";"3";"8";":";"0";"6";".";"5";"2";"4";" ";" ";" ";"L";"O";"G";" ";"I";"N";"F";"O";" ";":";":";" ";"R";"e";"m";"o";"v";"e";"d";" ";"c";"l";"i";"e";"n";"t";" ";"f";"r";"o";"m";" ";"p";"u";"b";" ";"t";"b";"l";" ";":";" ";,"C";,"E";,"P")
+("0";"8";":";"3";"8";":";"1";"1";".";"7";"9";"3";" ";" ";" ";"L";"O";"G";" ";"I";"N";"F";"O";" ";":";":";" ";"R";"e";"m";"o";"v";"e";"d";" ";"c";"l";"i";"e";"n";"t";" ";"f";"r";"o";"m";" ";"p";"u";"b";" ";"t";"b";"l";" ";":";" ";,"R";,"D";,"B";,"2")
+("0";"8";":";"3";"8";":";"2";"5";".";"4";"1";"8";" ";" ";" ";"L";"O";"G";" ";"I";"N";"F";"O";" ";":";":";" ";"R";"e";"m";"o";"v";"e";"d";" ";"c";"l";"i";"e";"n";"t";" ";"f";"r";"o";"m";" ";"p";"u";"b";" ";"t";"b";"l";" ";":";" ";,"B";,"A";,"S";,"E")
+./start_tp.sh: line 12:  4647 Killed                  q tp.q -instance 1 -logfile $logfile -p $tp_port -svc $tpsvc -c 2001 2001 -q

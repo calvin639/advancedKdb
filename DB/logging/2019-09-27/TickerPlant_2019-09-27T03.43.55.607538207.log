@@ -1,0 +1,165 @@
+"init_block complete"
+'2019.09.27T03:44:07.416 .Q.W
+  [0]  .Q.W
+       ^
+k){`used`heap`peak`wmax`mmap`mphy`syms`symw!(."\\w"),."\\w 0"}
+used| 372464
+heap| 67108864
+peak| 67108864
+wmax| 0
+mmap| 0
+mphy| 1081887027200
+syms| 749
+symw| 38774
+0i
+'2019.09.27T03:44:38.821 .sub
+  [0]  .sub
+       ^
+   | ::
+tbl| +`topic`client!(`symbol$();`symbol$())
+upd| {[vals]
+    `.pub.tbl upsert vals;
+    .log.info "New subscription succe..
+topic client
+------------
+"07:44:55.632   LOG INFO :: Updates for the trade table recieved so far today..
+"07:44:55.632   LOG INFO :: Updates for the quote table recieved so far today..
+               | ::
+force_subscribe| {[client; me; topic]
+        client_port: .alias.get_alias[c..
+subscribe      | {[SVC; me; tbl]
+        h:$[SVC in .connections.handles[`svc..
+update         | {[topic; data]
+        if[not topic in tables[]; :0];
+      ..
+"07:45:18.738   LOG INFO :: New subscription successful"
+"07:45:18.738   LOG INFO :: New subscription successful"
+'2019.09.27T03:45:19.631 hop. OS reports: Connection refused
+'2019.09.27T03:45:20.632 hop. OS reports: Connection refused
+'2019.09.27T03:45:22.631 hop. OS reports: Connection refused
+'2019.09.27T03:45:23.631 hop. OS reports: Connection refused
+'2019.09.27T03:45:24.632 hop. OS reports: Connection refused
+'2019.09.27T03:45:26.632 hop. OS reports: Connection refused
+'2019.09.27T03:45:28.632 hop. OS reports: Connection refused
+topic client
+------------
+quote RDB1  
+trade RDB1  
+'2019.09.27T03:45:30.631 hop. OS reports: Connection refused
+'2019.09.27T03:45:32.631 hop. OS reports: Connection refused
+'2019.09.27T03:45:33.632 hop. OS reports: Connection refused
+topic client
+------------
+quote RDB1  
+trade RDB1  
+   | ::
+tbl| +`topic`client!(`quote`trade;`RDB1`RDB1)
+upd| {[vals]
+    `.pub.tbl upsert vals;
+    .log.info "New subscription succe..
+     | ::
+send | {[SVC; topic; data]
+        //if[not (meta topic)~meta data; .log.erro..
+upd  | {[topic; data]
+        topic upsert data;
+        .log.handle@enlist(`..
+count| `quote`trade!165 80
+{[SVC; topic; data]
+        //if[not (meta topic)~meta data; .log.error "Wrong data types in data..
+        h:$[SVC in .connections.handles[`svc]; first exec handle from .connec..
+        tbl_available: topic in h"tables[]";
+        if[not tbl_available; .log.error "Subscriber (",(string client),") do..
+        h(`.rt.update; topic; data);
+        }
+{[]
+    runs: exec func from .cron.tbl where .z.t>(last_update+frequency);
+    update last_update:.z.t from `.cron.tbl where .z.t>(last_update+frequency);
+    {x[]} each runs;
+    }
+id| frequency func        last_update 
+--| ----------------------------------
+1 | 5000      .cron.trade 07:45:28.632
+2 | 2000      .cron.quote 07:45:32.631
+3 | 1000      .cron.flush 07:45:33.632
+4 | 60000     .cron.log   07:44:55.632
+{[]
+    data:flip (5#.z.d; 5?.z.t; 5#`APPL`AMZ`BMW`FROG; 5?10.0; 5?100; 5?`NYC`LD..
+    .tp.upd[`trade; data];
+    }
+'2019.09.27T03:47:10.533 char
+  [0]  [A[]
+       ^
+{[topic; data]
+        topic upsert data;
+        .log.handle@enlist(`.rt.update; topic; data);
+        .tp.count[topic]+:count data;
+        }
+date       time         sym  price    size ex  
+-----------------------------------------------
+2019.09.27 03:49:15.694 APPL 4.529782 90   NYC 
+2019.09.27 05:57:28.344 AMZ  1.014108 18   LDN 
+2019.09.27 06:33:04.370 BMW  2.785781 38   SING
+2019.09.27 05:06:40.003 FROG 3.064804 36   NYC 
+2019.09.27 06:38:40.648 APPL 1.492811 1    LDN 
+2019.09.27 02:03:46.211 APPL 2.987363 51   SING
+2019.09.27 05:14:22.546 AMZ  9.845271 3    SING
+2019.09.27 05:34:19.077 BMW  6.048108 30   LDN 
+2019.09.27 01:08:00.945 FROG 3.090942 97   NYC 
+2019.09.27 03:06:49.406 APPL 7.947873 38   DUB 
+2019.09.27 05:05:36.899 APPL 2.005554 46   SING
+2019.09.27 02:03:16.541 AMZ  3.599424 42   DUB 
+2019.09.27 01:52:22.331 BMW  7.192901 58   SING
+2019.09.27 03:01:02.864 FROG 4.153674 99   LDN 
+2019.09.27 02:39:24.892 APPL 8.31001  71   NYC 
+'2019.09.27T03:47:44.616 hop. OS reports: Connection refused
+  [0]  .cron.flush[]
+       ^
+{[]
+    //Send trade data to all subscribers
+    trade_subs: exec distinct client from .pub.tbl where topic=`trade;
+    .tp.send[ ; `trade; select from trade] each trade_subs;
+    //Remove data from TP
+    delete from `trade;
+    //Do the same for quote tbl
+    quote_subs: exec distinct client from .pub.tbl where topic=`quote;
+    .tp.send[ ; `quote; select from quote] each quote_subs;
+    delete from `quote;
+    }
+{[SVC; topic; data]
+        //if[not (meta topic)~meta data; .log.error "Wrong data types in data..
+        h:$[SVC in .connections.handles[`svc]; first exec handle from .connec..
+        tbl_available: topic in h"tables[]";
+        if[not tbl_available; .log.error "Subscriber (",(string client),") do..
+        h(`.rt.update; topic; data);
+        }
+,`RDB1
+'2019.09.27T03:48:58.762 hop. OS reports: Connection refused
+  [0]  .tp.send[`RDB1;`trade;select from trade]
+       ^
+{[SVC; topic; data]
+        //if[not (meta topic)~meta data; .log.error "Wrong data types in data..
+        h:$[SVC in .connections.handles[`svc]; first exec handle from .connec..
+        tbl_available: topic in h"tables[]";
+        if[not tbl_available; .log.error "Subscriber (",(string client),") do..
+        h(`.rt.update; topic; data);
+        }
+svc port handle
+---------------
+{[SVC; topic; data]
+        //if[not (meta topic)~meta data; .log.error "Wrong data types in data : "(string topic),"  ",string client; :0];
+        h:$[SVC in .connections.handles[`svc]; first exec handle from .connections.handles where svc=SVC; .connections.add[SVC] ];
+        tbl_available: topic in h"tables[]";
+        if[not tbl_available; .log.error "Subscriber (",(string client),") does not have appropriate tbl : ",string topic; :0];
+        h(`.rt.update; topic; data);
+        }
+{[SVC]
+        port: .alias.get_alias[SVC];
+        h:hopen port;
+        data:(SVC; port; h);
+        `.connections.handles upsert data;
+        :h;
+        }
+51001
+'2019.09.27T03:50:19.975 hop. OS reports: Connection refused
+  [0]  hopen 51001
+       ^

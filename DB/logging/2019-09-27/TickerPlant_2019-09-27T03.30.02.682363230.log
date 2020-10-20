@@ -1,0 +1,17 @@
+"init_block complete"
+"07:30:13.278   LOG INFO :: New subscription successful"
+"07:30:13.278   LOG INFO :: New subscription successful"
+'2019.09.27T03:30:13.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:14.701 hop. OS reports: Connection refused
+'2019.09.27T03:30:16.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:18.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:20.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:22.700 hop. OS reports: Connection refused
+topic client
+------------
+quote RDB1  
+trade RDB1  
+'2019.09.27T03:30:24.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:25.701 hop. OS reports: Connection refused
+'2019.09.27T03:30:27.700 hop. OS reports: Connection refused
+'2019.09.27T03:30:29.700 hop. OS reports: Connection refused

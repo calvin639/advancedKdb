@@ -1,0 +1,10 @@
+"init_block complete"
+"01:42:22.210   LOG INFO :: This process is a : BASE"
+"01:42:22.215   LOG INFO :: Added connection from SVC : TP"
+"01:42:23.216   LOG INFO :: Added connection from SVC : RDB1"
+"01:42:24.221   LOG INFO :: Added connection from SVC : CEP"
+"01:42:25.225   LOG INFO :: Added connection from SVC : RDB2"
+"01:43:28.535   LOG INFO :: Removed client from pub tbl : CEP"
+"01:43:29.771   LOG INFO :: Removed client from pub tbl : "
+"01:43:32.095   LOG INFO :: Removed client from pub tbl : RDB2"
+./start_base.sh: line 12: 14781 Killed                  q Qframework.q -instance 1 -p $Qport -svc BASE -c 2001 2001 -q

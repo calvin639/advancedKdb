@@ -1,0 +1,28 @@
+"init_block complete"
+'2019.09.27T03:59:53.039 .alias.tbl
+  [0]  .alias.tbl
+       ^
+         | ::
+dict     | (,`TP)!,51003i
+add      | {[alias;port].alias.dict[alias]:port}
+get_alias| {[k] :first .alias.dict[k];}
+'2019.09.27T04:00:16.535 .rt.subscibe
+  [0]  .rt.subscibe
+       ^
+{[SVC; me; tbl]
+        h:$[SVC in .connections.handles[`svc]; first exec handle from .connections.handles where svc=SVC; .connections.add[SVC] ];
+        h(`.pub.upd; (tbl; me));
+        }
+{[SVC]
+        port: .alias.get_alias[SVC];
+        h:hopen port;
+        data:(SVC; port; h);
+        `.connections.handles upsert data;
+        :h;
+        }
+"08:00:46.571   LOG INFO :: Updates for the trade table recieved so far today : 50"
+"08:00:46.571   LOG INFO :: Updates for the quote table recieved so far today : 105"
+"08:01:47.571   LOG INFO :: Updates for the trade table recieved so far today : 105"
+"08:01:47.571   LOG INFO :: Updates for the quote table recieved so far today : 215"
+"08:02:48.570   LOG INFO :: Updates for the trade table recieved so far today : 155"
+"08:02:48.570   LOG INFO :: Updates for the quote table recieved so far today : 325"

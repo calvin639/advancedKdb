@@ -1,0 +1,42 @@
+"init_block complete"
+"04:40:07.906   LOG INFO :: New subscription successful"
+"04:40:07.906   LOG INFO :: New subscription successful"
+"04:40:14.924   LOG INFO :: New subscription successful"
+"04:40:20.117   LOG INFO :: New subscription successful"
+"04:40:20.117   LOG INFO :: New subscription successful"
+'2019.09.27T00:40:20.487 hop. OS reports: Connection refused
+'2019.09.27T00:40:21.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:23.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:25.487 hop. OS reports: Connection refused
+'2019.09.27T00:40:26.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:27.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:29.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:31.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:32.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:34.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:36.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:37.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:39.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:41.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:43.488 hop. OS reports: Connection refused
+"04:40:43.586   LOG INFO :: Removed client from pub tbl : "
+'2019.09.27T00:40:45.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:46.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:48.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:49.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:51.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:52.488 hop. OS reports: Connection refused
+"04:40:52.940   LOG INFO :: Removed client from pub tbl : "
+'2019.09.27T00:40:54.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:55.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:57.488 hop. OS reports: Connection refused
+'2019.09.27T00:40:58.488 hop. OS reports: Connection refused
+'2019.09.27T00:41:00.488 hop. OS reports: Connection refused
+"04:41:00.752   LOG INFO :: Removed client from pub tbl : "
+"04:41:00.752   LOG INFO :: Removed client from pub tbl : "
+("0";"4";":";"4";"1";":";"0";"0";".";"7";"5";"3";" ";" ";" ";"L";"O";"G";" ";..
+'2019.09.27T00:41:02.487 hop. OS reports: Connection refused
+'2019.09.27T00:41:04.487 hop. OS reports: Connection refused
+'2019.09.27T00:41:06.487 hop. OS reports: Connection refused
+'2019.09.27T00:41:08.487 hop. OS reports: Connection refused
+'2019.09.27T00:41:10.487 hop. OS reports: Connection refused

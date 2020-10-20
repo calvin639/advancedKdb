@@ -1,0 +1,4 @@
+"init_block complete"
+'2019.09.26T21:59:02.735 hop. OS reports: Connection refused
+  [2]  /home/cwright/advanced/rdb.q:12: .rt.subscribe[`TP; rdb ; ] each tbls;
+                                                                   ^
