@@ -1,0 +1,21 @@
+"init_block complete"
+"12:19:20.163   LOG INFO :: This process is a : RDB2"
+"12:19:20.163   LOG INFO :: Finished importing libraries"
+"12:19:20.163   LOG INFO :: Connecting to BASE process"
+"12:19:20.163   LOG INFO :: Connecting to BASE process"
+"12:19:20.163   LOG INFO :: completed command on handle : 5"
+,`aggtbl
+"12:19:20.164   LOG INFO :: Subscribing to TP tables"
+"12:19:20.165   LOG INFO :: Finished Subscribing to TP tables"
+"12:20:20.265   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(8.359132 9.27445 9.388881 9.126417;1.485357 0.1221208 0.1392076 0.6938325;653 686 598 1183;54.41667 57.16667 49.83333 49.29167;2.993493 1.781837 6.867425 2.453491)
+"12:21:20.365   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(9.939541 9.27445 9.988041 9.126417;0.035863 0.1221208 0.1392076 0.6938325;1198 1118 1098 2391;49.91667 46.58333 45.75 49.8125;1.873486 9.01325 5.549213 6.030877)
+"12:22:20.465   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(9.939541 9.27445 9.988041 9.850208;0.035863 0.1221208 0.1392076 0.6938325;1825 1635 1952 3571;52.14286 46.71429 55.77143 51.01429;8.894394 6.07256 1.993579 1.624076)
+"12:23:20.565   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(9.939541 9.616332 9.988041 9.850208;0.035863 0.1221208 0.1392076 0.3053477;2504 2274 2382 4628;53.2766 48.38298 50.68085 49.23404;4.486611 8.529262 0.8789785 8.809455)
+"12:24:20.665   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(9.939541 9.744446 9.988041 9.850208;0.035863 0.1221208 0.1392076 0.09456303;3197 2672 3135 5773;54.18644 45.28814 53.13559 48.92373;0.5250616 7.110777 4.231691 6.161701)
+"12:25:20.765   LOG INFO :: Update for the aggtbl  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`max_price`min_price`trade_vol`avg_size`last_price!(9.939541 9.744446 9.988041 9.869115;0.035863 0.1221208 0.07115191 0.09456303;3736 3239 3688 6950;52.61972 45.61972 51.94366 48.94366;1.669223 6.933299 3.647661 1.047865)

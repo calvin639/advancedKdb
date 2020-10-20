@@ -1,0 +1,4 @@
+"init_block complete"
+'2019.09.29T23:18:51.788 rank
+  [2]  /home/cwright/advanced/rdb.q:9: .connections.add[`BASE;51001];
+                                       ^

@@ -1,0 +1,14 @@
+"init_block complete"
+"04:49:42.269   LOG INFO :: New subscription successful"
+'2019.09.27T00:49:53.938 .sub
+  [0]  .sub
+       ^
+   | ::
+tbl| +`topic`client!(,`aggtbl;,`TP)
+upd| {[vals]
+    `.pub.tbl upsert vals;
+    .log.info "New subscription succe..
+topic  client
+-------------
+aggtbl TP    
+("0";"4";":";"5";"0";":";"4";"8";".";"5";"2";"2";" ";" ";" ";"L";"O";"G";" ";..

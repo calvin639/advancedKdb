@@ -1,0 +1,41 @@
+"init_block complete"
+"12:19:18.158   LOG INFO :: This process is a : RDB1"
+"12:19:18.158   LOG INFO :: Finished importing libraries"
+"12:19:18.158   LOG INFO :: Connecting to BASE process"
+"12:19:18.158   LOG INFO :: Connecting to BASE process"
+"12:19:18.159   LOG INFO :: completed command on handle : 5"
+`quote`trade
+"12:19:18.159   LOG INFO :: Subscribing to TP tables"
+"12:19:18.160   LOG INFO :: Finished Subscribing to TP tables"
+"12:19:19.167   LOG INFO :: Added connection from SVC : CEP"
+"12:19:20.166   LOG INFO :: Added connection from SVC : RDB2"
+"12:20:18.260   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(2.266575 1.647619 6.867425 0.904823;37 35 34 99)
+"12:20:18.260   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;11:04:52.354 05:44:43.436 02:13:48.487 03:07:46.549;4.610987 9.126417 5.055407 5.291953;59 50 27 26;`SING`LDN`LDN`NYC)
+"12:21:18.360   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(3.972393 0.3708122 2.92867 6.030877;39 27 78 13)
+"12:21:18.360   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;02:40:36.720 09:31:37.894 08:40:11.819 05:35:28.404;5.951513 1.014923 9.527955 0.035863;16 53 10 36;`SING`SING`DUB`LDN)
+"12:22:18.460   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(8.894394 6.07256 1.993579 1.624076;63 40 66 26)
+"12:22:18.460   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;11:41:33.170 09:37:05.352 02:47:43.231 01:03:49.597;1.001509 4.534902 4.865521 0.1837959;41 23 75 37;`DUB`DUB`SING`DUB)
+"12:23:18.560   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(4.486611 8.529262 0.8789785 8.809455;53 30 99 50)
+"12:23:18.560   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;10:34:37.827 11:14:52.510 06:32:58.861 06:17:29.235;9.361944 3.447471 9.754882 0.1590754;36 47 21 81;`NYC`LDN`NYC`DUB)
+"12:24:18.660   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(0.5250616 7.110777 4.231691 6.161701;93 33 21 21)
+"12:24:18.660   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;01:40:53.413 11:44:25.148 01:51:10.213 11:25:44.683;7.635421 9.273518 4.694779 1.622751;6 87 86 86;`NYC`DUB`LDN`DUB)
+"12:25:18.760   LOG INFO :: Update for the quote  table"
+(+(,`sym)!,`FROG`AMZ`BMW`APPL)!+`price`size!(1.823989 8.954927 3.647661 8.472728;91 21 92 9)
+"12:25:18.760   LOG INFO :: Update for the trade  table"
+(`s#+(,`sym)!,`s#`AMZ`APPL`BMW`FROG)!+`date`time`price`size`ex!(2019.10.09 2019.10.09 2019.10.09 2019.10.09;01:47:57.505 04:04:43.655 12:03:51.611 06:57:46.469;1.730725 2.886324 3.955959 4.46472;9 94 59 35;`LDN`SING`LDN`DUB)
+"12:25:44.276   LOG INFO :: Removed client from pub tbl : "
+"12:25:44.287   LOG INFO :: Removed client from pub tbl : CEP"
+"12:25:44.287   LOG INFO :: Removed client from pub tbl : RDB2"
+"12:25:54.689   LOG INFO :: Removed client from pub tbl : BASE"
+"12:25:54.761   LOG INFO :: Removed client from pub tbl : TP"
+./start_rdb1.sh: line 13: 26097 Killed                  q rdb.q -instance 1 -logfile $logfile -p $rdb1_port -svc RDB1 -c 2001 2001 -tables quote trade -q

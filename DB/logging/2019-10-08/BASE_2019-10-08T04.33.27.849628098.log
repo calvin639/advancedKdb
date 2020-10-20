@@ -1,0 +1,9 @@
+"init_block complete"
+"08:33:27.899   LOG INFO :: Added connection from SVC : TP"
+"08:33:28.902   LOG INFO :: Added connection from SVC : RDB1"
+"08:33:29.909   LOG INFO :: Added connection from SVC : CEP"
+"08:33:30.911   LOG INFO :: Added connection from SVC : RDB2"
+"08:38:06.501   LOG INFO :: Removed client from pub tbl : "
+("0";"8";":";"3";"8";":";"0";"6";".";"5";"2";"4";" ";" ";" ";"L";"O";"G";" ";"I";"N";"F";"O";" ";":";":";" ";"R";"e";"m";"o";"v";"e";"d";" ";"c";"l";"i";"e";"n";"t";" ";"f";"r";"o";"m";" ";"p";"u";"b";" ";"t";"b";"l";" ";":";" ";,"C";,"E";,"P")
+("0";"8";":";"3";"8";":";"1";"1";".";"7";"9";"3";" ";" ";" ";"L";"O";"G";" ";"I";"N";"F";"O";" ";":";":";" ";"R";"e";"m";"o";"v";"e";"d";" ";"c";"l";"i";"e";"n";"t";" ";"f";"r";"o";"m";" ";"p";"u";"b";" ";"t";"b";"l";" ";":";" ";,"R";,"D";,"B";,"2")
+./start_base.sh: line 12:  4646 Killed                  q Qframework.q -instance 1 -p $Qport -svc BASE -c 2001 2001 -q

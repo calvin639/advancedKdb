@@ -1,0 +1,6 @@
+"init_block complete"
+"SVC : RDB1"
+"RDB : RDB1"
+'2019.09.29T23:15:39.008 type
+  [2]  /home/cwright/advanced/rdb.q:13: .rt.subscribe[`TP; rdb ; ] each tbls;
+                                                                   ^

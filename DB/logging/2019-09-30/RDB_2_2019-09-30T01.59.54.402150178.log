@@ -1,0 +1,17 @@
+"init_block complete"
+"05:59:54.434   LOG INFO :: completed command on handle : 5"
+,`aggtbl
+'2019.09.30T02:00:00.928 aggtbl
+  [0]  aggtbl
+       ^
+'2019.09.30T02:00:06.144 aggTbl
+  [0]  aggTbl
+       ^
+`quote`trade
+sym| price size
+---| ----------
+date time sym price size ex
+---------------------------
+'2019.09.30T02:02:39.068 aggtbl
+  [0]  aggtbl
+       ^

@@ -1,0 +1,3 @@
+'2019.09.29T22:51:49.651 :/TP_2019.09.30.log. OS reports: Permission denied
+  [2]  /home/cwright/advanced/Qframework.q:85: init_block[];
+                                               ^
